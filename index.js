@@ -57,7 +57,7 @@ function addMole() {
   let randomToNine = randomIntFromInterval(1, 9)
   console.log(randomToNine)
 
-  for (let i = 1; i < randomToNine + 1; i++) {
+  for (let i = 1; i < randomToNine; i++) {
     const grid = document.querySelector('.hole-image-grid')
     let hole = document.createElement('img')
     hole.src = 'images/hole.png'
@@ -69,7 +69,7 @@ function addMole() {
 
   grid.append(mole)
 
-  for (let i = 1; i < 9 - randomToNine; i++) {
+  for (let i = 1; i < 10 - randomToNine; i++) {
     const newHole = document.createElement('img')
     newHole.src = 'images/hole.png'
     grid.append(newHole)
